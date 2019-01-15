@@ -2,7 +2,7 @@
   "name": "reportlist",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://Maheshchoda.github.io/ReportListing"
+  "homepage": "https://Maheshchoda.github.io/ReportListing",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
