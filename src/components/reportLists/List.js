@@ -22,7 +22,7 @@ const List = props => {
           <Link
             className="btn btn-outline-primary btn-sm"
             role="button"
-            to={`lyrics/track/${list.track_id}`}
+            to={`/ReportListing/lyrics/track/${list.track_id}`}
           >
             Continue reading
           </Link>

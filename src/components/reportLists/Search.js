@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Spinner from "../layout/Spinner";
 import { Consumer } from "../../context";
 
 class Search extends Component {
@@ -12,7 +13,6 @@ class Search extends Component {
   handleSubmit = (dispatch, e) => {
     e.preventDefault();
     if (!this.state.reportTitle) return;
-
     axios
       .get(
         `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_lyrics=${
@@ -21,6 +21,7 @@ class Search extends Component {
         &apikey=${process.env.REACT_APP_RL_KEY}`
       )
       .then(result => {
+        console.log(result);
         dispatch({
           type: "SEARCH_REPORTS",
           payload: result.data.message.body.track_list

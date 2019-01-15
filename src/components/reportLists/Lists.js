@@ -114,7 +114,7 @@ class Lists extends Component {
                             className="dropdown-item"
                             href="#"
                           >
-                            By Date
+                            By Cost
                           </a>
                           <a
                             onClick={this.handleSortTime.bind(
