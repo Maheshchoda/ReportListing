@@ -39,7 +39,7 @@ class Search extends Component {
           const { dispatch } = value;
           return (
             <div className="card card-body mb-4 p-4">
-              <h3 className="display-4 text-center">Search For A Report</h3>
+              <h3 className="display-4 text-center">Search For Lyrics....</h3>
               <form onSubmit={this.handleSubmit.bind(this, dispatch)}>
                 <div className="form-group">
                   <input
@@ -55,7 +55,7 @@ class Search extends Component {
                   className="btn btn-primary btn-lg btn-block mb-5"
                   type="submit"
                 >
-                  Get the Report
+                  Get the Lyric
                 </button>
               </form>
             </div>

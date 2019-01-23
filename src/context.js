@@ -30,7 +30,7 @@ const reducer = (state, action) => {
 export class Provider extends Component {
   state = {
     report_list: [],
-    heading: "Top 10 Reports",
+    heading: "Top 10 Lyrics",
     dispatch: action => this.setState(state => reducer(state, action))
   };
 
@@ -43,7 +43,7 @@ export class Provider extends Component {
       .then(result => {
         this.setState({
           report_list: result.data.message.body.track_list,
-          heading: "Top 10 Reports"
+          heading: "Top 10 Lyrics"
         });
       })
       .catch(err => {
